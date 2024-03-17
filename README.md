@@ -25,13 +25,13 @@ Model metrics:
 
 Метрики модели:
 
-Precision: 0.994
+- Precision: 0.994
 
-Recall: 0.982
+- Recall: 0.982
 
-RMSE: 0.089
+- RMSE: 0.089
 
-R2: 0.964
+- R2: 0.964
 <p align="center"><img src="https://github.com/StrangePineAplle/AI-SportTech/blob/main/media/perception.png"></p>
 
 ## About the repository
