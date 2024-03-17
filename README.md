@@ -17,6 +17,23 @@ To solve the problem, the 'random forest' machine learning model is used, this p
 
 Для решения задачи используется модель машинного обучения 'random forest', это обеспечивает высокую точность предсказания основанную на совокупности шагов, сердцебиения, времени тренировки, пола, веса и возраста пользователя.
 
+Model accuracy diagram. As you can see, the prediction coincides with real data by almost 99%
+
+Диаграмма точности модели. Как можно видеть предсказание совпадает с реальными данными практически на 99%
+
+Model metrics:
+
+Метрики модели:
+
+Precision: 0.994
+
+Recall: 0.982
+
+RMSE: 0.089
+
+R2: 0.964
+<p align="center"><img src="https://github.com/StrangePineAplle/AI-SportTech/blob/main/media/perception.png"></p>
+
 ## About the repository
 
 Here you can familiarize yourself with the structure of this repository. For convenience, it is divided into two parts: a complete script with inputdata processing and model training, and a docker image with a pre-trained model that can be downloaded and used by you\
