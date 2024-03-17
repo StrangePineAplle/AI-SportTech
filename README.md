@@ -22,8 +22,10 @@ Here you can familiarize yourself with the structure of this repository. For con
 
 ## [Full model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel)
 The folder contains the data on which the model was trained, an example of an input file for prediction, and a folder for saving the trained model.
+
 В папке находятся данные, на которых обучалась модель, пример входного файла для прогнозирования и папка для сохранения обученной модели.
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
 The folder contains a docker image which can be installed as follows:
+
 Папка содержит докер образ который может быть установлен следующим образом: 
