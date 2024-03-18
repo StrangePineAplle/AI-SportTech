@@ -25,13 +25,13 @@ Model metrics:
 
 Метрики модели:
 
-Precision: 0.994
+- Precision: 0.994
 
-Recall: 0.982
+- Recall: 0.982
 
-RMSE: 0.089
+- RMSE: 0.089
 
-R2: 0.964
+- R2: 0.964
 <p align="center"><img src="https://github.com/StrangePineAplle/AI-SportTech/blob/main/media/perception.png"></p>
 
 ## About the repository
@@ -46,6 +46,14 @@ Here you can familiarize yourself with the structure of this repository. For con
 The folder contains the data on which the model was trained, an example of an input file for prediction, and a folder for saving the trained model.
 
 В папке находятся данные, на которых обучалась модель, пример входного файла для прогнозирования и папка для сохранения обученной модели.
+
+The full model jupyter notebook file can be found [here](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/AI_SportTech.ipynb)
+
+Полный файл модели jupyter notebook можно найти [здесь](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/AI_SportTech.ipynb)
+
+The data is available for download from the link in the [readme](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/data/readme.txt)  file.
+
+Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/data/readme.txt) файле
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
 The folder contains a docker image which can be installed as follows:
