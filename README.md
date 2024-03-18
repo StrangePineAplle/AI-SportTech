@@ -37,10 +37,8 @@ Model metrics:
 ## About the repository
 
 Here you can familiarize yourself with the structure of this repository. For convenience, it is divided into two parts: a complete script with inputdata processing and model training, and a docker image with a pre-trained model that can be downloaded and used by you\
-(can be downloaded later)
 
 Здесь вы можете ознакомиться со структурой данного репозитория. Для удобства он поделён на две части: полный скрипт с обработкой входных данных и обучением модели и докер образ с заранее обученной моделью который может быть скачан и использован вами\
-(может быть загружен позже)
 
 ## [Full model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel)
 The folder contains the data on which the model was trained, an example of an input file for prediction, and a folder for saving the trained model.
