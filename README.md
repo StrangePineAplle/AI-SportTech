@@ -1,5 +1,10 @@
 <p align="center"><img src="https://github.com/StrangePineAplle/AI-SportTech/blob/main/media/AI-SportTech.png"></p>
 
+&nbsp;&nbsp;&nbsp;
+![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
+[![Build Status](https://travis-ci.org/anfederico/clairvoyant.svg?branch=master)](https://travis-ci.org/anfederico/clairvoyant)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+
 ## Basic Overview
 A solution to the problem of cheating steps when using fitness applications\
 based on machine learning algorithms, prepared for the [Мой фитнес](https://xn--e1afclhdzfq.xn--p1ai/) company.
