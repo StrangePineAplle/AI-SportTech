@@ -49,9 +49,9 @@ The full model jupyter notebook file can be found [here](https://github.com/Stra
 
 Полный файл модели jupyter notebook можно найти [здесь](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/AI_SportTech.ipynb)
 
-The data is available for download from the link in the [readme](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/data/readme.txt)  file.
+The data is available for download from the link in the [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data)  file.
 
-Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/data/readme.txt) файле
+Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data) файле
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
 The folder contains a docker image which can be installed as follows:
