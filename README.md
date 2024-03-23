@@ -31,7 +31,7 @@ Model accuracy diagram. As you can see, the prediction coincides with real data 
 
 Model metrics:
 
-Метрики модели:
+### Метрики модели:
 
 - Precision: 0.994
 
@@ -66,11 +66,16 @@ The data is available for download from the link in the [readme](https://github.
 Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data) файле
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
+
+#### [Built Docker image](https://drive.google.com/file/d/1xnDpu-xoy_WdXZaYBSTgaQYb5nNpwqIH/view?usp=sharing)
+
 The folder contains a docker image which can be installed as follows:
 
 Папка содержит докер образ который может быть установлен следующим образом: 
 
-## Build the image
+### Build the image
+
+
 all operations are performed in the directory [ml_model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel/ml_model)
 
 Все операции выполняются в директории [ml_model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel/ml_model)
@@ -79,7 +84,7 @@ all operations are performed in the directory [ml_model](https://github.com/Stra
 docker build -t ml_model .
 ```
 
-## Running the image
+### Running the image
 
 ```bash
 docker run ml_model
