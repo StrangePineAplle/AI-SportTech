@@ -67,14 +67,11 @@ The data is available for download from the link in the [readme](https://github.
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
 
-#### [Built Docker image](https://drive.google.com/file/d/1xnDpu-xoy_WdXZaYBSTgaQYb5nNpwqIH/view?usp=sharing)
+The folder contains a docker image that can be downloaded or built as follows:
 
-The folder contains a docker image which can be installed as follows:
-
-Папка содержит докер образ который может быть установлен следующим образом: 
+Папка содержит докер образ который может быть скачан или собран следующим образом: 
 
 ### Build the image
-
 
 all operations are performed in the directory [ml_model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel/ml_model)
 
@@ -83,6 +80,18 @@ all operations are performed in the directory [ml_model](https://github.com/Stra
 ```bash
 docker build -t ml_model .
 ```
+
+### or
+
+### [Download Docker image](https://drive.google.com/file/d/1xnDpu-xoy_WdXZaYBSTgaQYb5nNpwqIH/view?usp=sharing)
+
+#### Importing the image
+
+```bash
+docker import - ml_model < ml_model.zip
+```
+
+---
 
 ### Running the image
 
