@@ -81,15 +81,7 @@ docker build -t ml_model .
 
 ### or
 
-### [Download Docker image](https://drive.google.com/file/d/1xnDpu-xoy_WdXZaYBSTgaQYb5nNpwqIH/view?usp=sharing)
-
-#### Importing the image
-
-```bash
-docker import - ml_model < ml_model.zip
-```
-
----
+### [Download Docker image](https://hub.docker.com/repository/docker/fpineaplle/ai-sporttech/general))
 
 ### Running the image
 
