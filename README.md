@@ -81,7 +81,7 @@ docker build -t ml_model .
 
 ### or
 
-### [Download Docker image](https://hub.docker.com/repository/docker/fpineaplle/ai-sporttech/general))
+### [Download Docker image](https://hub.docker.com/repository/docker/fpineaplle/ai-sporttech/general)
 
 ### Running the image
 
