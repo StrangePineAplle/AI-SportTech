@@ -25,7 +25,7 @@ A factor analysis of the dataset was carried out using the principal component m
 
 ---
 
-Был проведен факторный анализ набора данных методом главных компонент, за счет чего было уменьшено количество параметров обучения и увеличена точность модели.
+Был проведен факторный анализ датасета методом главных компонент, за счет чего было уменьшено количество параметров обучения и увеличена точность модели.
 
 ## Used AI model
 To solve the problem, the 'random forest' machine learning model is used, this provides high accuracy of prediction based on a combination of steps, heartbeat, training time, gender, weight and age of the user.
