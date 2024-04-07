@@ -29,9 +29,7 @@ Model accuracy diagram. As you can see, the prediction coincides with real data 
 Для решения задачи используется модель машинного обучения 'random forest', это обеспечивает высокую точность предсказания основанную на совокупности шагов, сердцебиения, времени тренировки, пола, веса и возраста пользователя.
 Диаграмма точности модели. Как можно видеть предсказание совпадает с реальными данными практически на 99%
 
-Model metrics:
-
-Метрики модели:
+### Model metrics:
 
 - Precision: 0.994
 
@@ -66,6 +64,29 @@ The data is available for download from the link in the [readme](https://github.
 Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data) файле
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
-The folder contains a docker image which can be installed as follows:
 
-Папка содержит докер образ который может быть установлен следующим образом: 
+The folder contains a docker image that can be downloaded or built as follows:
+
+Папка содержит докер образ который может быть скачан или собран следующим образом: 
+
+### Build the image
+
+all operations are performed in the directory [ml_model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel/ml_model)
+
+Все операции выполняются в директории [ml_model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel/ml_model)
+
+```bash
+docker build -t ml_model .
+```
+
+### or
+
+### [Download Docker image](https://hub.docker.com/repository/docker/fpineaplle/ai-sporttech/general)
+
+---
+
+### Running the image
+
+```bash
+docker run ml_model
+```
