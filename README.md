@@ -20,6 +20,13 @@ But what is the problem with increasing steps? Fitness apps these days provide t
 
 Но что за проблема накрутки шагов? Фитнес приложения в наши дни предоставляют возможность не только отслеживать свои собственные шаги, но и участвовать в разнообразных соревнованиях. Часто за победу в соревнованиях организаторы предоставляют призы, а работодатели проводящие соревнования для улучшения состояния здоровья своих работников предоставляют премии. Поэтому люди начинают использовать разнообразные внешние методы жульничества (такие, как качели для телефона например) которые невозможно отследить системно. Несмотря на это при анализе данных полученных с подобных аккаунтов можно выявить закономерность и предотвратить жульничество.
 
+## PCA
+A factor analysis of the dataset was carried out using the principal component method, due to which the number of parameters for training was reduced and the accuracy of the model was increased.
+
+---
+
+Был проведен факторный анализ набора данных методом главных компонент, за счет чего было уменьшено количество параметров обучения и увеличена точность модели.
+
 ## Used AI model
 To solve the problem, the 'random forest' machine learning model is used, this provides high accuracy of prediction based on a combination of steps, heartbeat, training time, gender, weight and age of the user.
 Model accuracy diagram. As you can see, the prediction coincides with real data by almost 99%
