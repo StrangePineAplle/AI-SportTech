@@ -20,6 +20,23 @@ But what is the problem with increasing steps? Fitness apps these days provide t
 
 Но что за проблема накрутки шагов? Фитнес приложения в наши дни предоставляют возможность не только отслеживать свои собственные шаги, но и участвовать в разнообразных соревнованиях. Часто за победу в соревнованиях организаторы предоставляют призы, а работодатели проводящие соревнования для улучшения состояния здоровья своих работников предоставляют премии. Поэтому люди начинают использовать разнообразные внешние методы жульничества (такие, как качели для телефона например) которые невозможно отследить системно. Несмотря на это при анализе данных полученных с подобных аккаунтов можно выявить закономерность и предотвратить жульничество.
 
+## Data structure
+The following data is required for the neural network to work: 'meters','hr_delta','birth_date','sex','weight'
+meters: meters or steps walked
+hr_delta: difference between heart rate at rest and during exercise (beats/minute)
+birth_date: date of birth (in unix time)
+sex: gender (0 - female, 1 - male)
+weight: weight (kg)
+
+---
+
+Для работы нейросети требуются следующие данные: 'meters','hr_delta','birth_date','sex','weight'
+meters: пройденные метры или шаги 
+hr_delta: разница между сердцебиением в покое и при нагрузке (ударов/минута)
+birth_date: дата рождения (в unix времени)
+sex: пол (0 - женщина, 1 - мужчина)
+weight: вес (кг)
+
 ## PCA
 A factor analysis of the dataset was carried out using the principal component method, due to which the number of parameters for training was reduced and the accuracy of the model was increased.
 
@@ -62,6 +79,8 @@ The full model jupyter notebook file can be found [here](https://github.com/Stra
 
 The data is available for download from the link in the [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data)  file.
 
+Attention. The model references data in the folder named [data](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data). Do NOT change the folder name. The data is divided into 4 datasets: cheaters, honest ones, user profiles and test datasets consisting of a single user session. Please keep the original file names or you will have to adapt the data preprocessing.
+
 ---
 
 В папке находятся данные, на которых обучалась модель, пример входного файла для прогнозирования и папка для сохранения обученной модели.
@@ -69,6 +88,8 @@ The data is available for download from the link in the [readme](https://github.
 Полный файл модели jupyter notebook можно найти [здесь](https://github.com/StrangePineAplle/AI-SportTech/blob/main/fullModel/AI_SportTech.ipynb)
 
 Данные доступны для загрузки по ссылке в [readme](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data) файле
+
+Внимание. Модель ссылается на данные в папке [data](https://github.com/StrangePineAplle/AI-SportTech/tree/main/fullModel/data) НЕ меняйте название папки. Данные разбиты на 4 датасета: читеры, честные, профили пользователей и тестовые состоящии из сессии одного пользователя. Пожалуйста, сохраняйте оригинальные наименования файлов или вам придётся адаптировать предобработку данных.
 
 ## [Trained model](https://github.com/StrangePineAplle/AI-SportTech/tree/main/trainedModel)
 
@@ -95,5 +116,10 @@ docker build -t ml_model .
 ### Running the image
 
 ```bash
-docker run ml_model
+docker run --rm --mount type=bind,source="$(pwd)/input-sample.json",target=/input.json ml_model
 ```
+Where 'input-sample.json' is your data 
+
+---
+
+Где 'input-sample.json' — ваши данные
