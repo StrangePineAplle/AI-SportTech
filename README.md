@@ -22,19 +22,29 @@ But what is the problem with increasing steps? Fitness apps these days provide t
 
 ## Data structure
 The following data is required for the neural network to work: 'meters','hr_delta','birth_date','sex','weight'
+
 meters: meters or steps walked
+
 hr_delta: difference between heart rate at rest and during exercise (beats/minute)
+
 birth_date: date of birth (in unix time)
+
 sex: gender (0 - female, 1 - male)
+
 weight: weight (kg)
 
 ---
 
 Для работы нейросети требуются следующие данные: 'meters','hr_delta','birth_date','sex','weight'
+
 meters: пройденные метры или шаги 
+
 hr_delta: разница между сердцебиением в покое и при нагрузке (ударов/минута)
+
 birth_date: дата рождения (в unix времени)
+
 sex: пол (0 - женщина, 1 - мужчина)
+
 weight: вес (кг)
 
 ## PCA
