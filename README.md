@@ -126,9 +126,18 @@ docker build -t ml_model .
 
 ### Running the image
 
+local
+
 ```bash
 docker run --rm --mount type=bind,source="$(pwd)/input-sample.json",target=/input.json ml_model
 ```
+
+web
+
+```bash
+docker run --rm --mount type=bind,source="$(pwd)/input-sample.json",target=/input.json fpineaplle/ai-sporttech:ml_model
+```
+
 Where 'input-sample.json' is your data 
 
 ---
