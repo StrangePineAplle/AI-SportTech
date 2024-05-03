@@ -126,13 +126,13 @@ docker build -t ml_model .
 
 ### Running the image
 
-local
+local:
 
 ```bash
 docker run --rm --mount type=bind,source="$(pwd)/input-sample.json",target=/input.json ml_model
 ```
 
-web
+web:
 
 ```bash
 docker run --rm --mount type=bind,source="$(pwd)/input-sample.json",target=/input.json fpineaplle/ai-sporttech:ml_model
