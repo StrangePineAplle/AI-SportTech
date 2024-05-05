@@ -17,7 +17,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 # @title Импорт примера итоговых входных данных
-inputDataTmp = pd.read_json(path_or_buf='./input.json', lines=True)
+inputDataTmp = pd.read_json(path_or_buf='/input.json', lines=True)
 prof = pd.DataFrame.from_dict(inputDataTmp['profile'].tolist() )
 
 # ----------------------------
@@ -28,9 +28,12 @@ prof.rename(columns = {'id':'profile_id'}, inplace = True )
 prof['sex'] = prof['sex'] == 'male' # 0 - female, 1 - male
 prof['sex'] = prof['sex'].astype(int)
 prof['hr_delta'] = prof['hr_max'] -  prof['hr_rest']
-del prof['hr_rest']
-del prof['hr_max']
-del prof['personal_goals']
+
+
+#del prof['hr_rest']
+#del prof['hr_max']
+#del prof['personal_goals']
+
 # ----------------------------
 
 inpData = pd.DataFrame.from_dict(inputDataTmp['sessions'].tolist() )
@@ -43,14 +46,16 @@ inpData['start_millis'] = inpData['start_millis'].astype(int)
 inpData['stop_millis'] = inpData['stop_millis'].astype(int)
 inpData['kkal'] = inpData['kkal'].astype(float)
 inpData['activity_day'] = inpData['activity_day'].astype(int)
-del inpData['timezone']
-del inpData['skllzz_without_artifacts']
-del inpData['skllzz_with_artifacts']
-del inpData['skllzz']
-del inpData['id']
+
+#del inpData['timezone']
+#del inpData['skllzz_without_artifacts']
+#del inpData['skllzz_with_artifacts']
+#del inpData['skllzz']
+#del inpData['id']
+#del inpData['stop_millis']
+#del inpData['start_millis']
+
 inpData['delta_millis'] = inpData['stop_millis'] - inpData['start_millis']
-del inpData['stop_millis']
-del inpData['start_millis']
 inpData = inpData.merge(prof, on='profile_id', how='inner')
 
 inpDataSteps = pd.DataFrame.from_dict(inpData['steps'].tolist() )
